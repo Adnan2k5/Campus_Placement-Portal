@@ -1,217 +1,216 @@
+# 🚀 Campus Placement Management System
 
+A scalable, role-based Campus Placement Management System designed to automate and streamline university placement workflows.
 
-                                                  🎓 Campus Placement Management System
+This project simulates a real-world recruitment platform with separate dashboards for Students, Recruiters, and Admin, along with protected routing, analytics, and structured state management.
 
-A comprehensive role-based Campus Placement Management System built for managing student placements, recruiters, job postings, and administrative operations in a college environment.
+---
 
-This project demonstrates full-stack architecture concepts using mock data and modern UI practices — ideal for academic submission or portfolio showcasing.
+## 📌 Overview
 
-🚀 Features
-🔐 1. Authentication System
+The system digitizes the complete placement lifecycle:
 
-Role-based login (Student / Recruiter / Admin)
+- Student profile management  
+- Recruiter job postings  
+- Application tracking  
+- Admin analytics & announcements  
+- Placement calendar and support pages  
 
-Mock authentication with localStorage persistence
+The architecture ensures strict role-based access and modular separation of concerns.
 
-Protected routes with automatic redirection
+---
 
-Session-based access control
+## 🏗 System Architecture
 
-👨‍🎓 2. Student Dashboard
+Authentication Layer  
+↓  
+Role-Based Protected Routes  
+↓  
+Dashboard Layer (Student / Recruiter / Admin)  
+↓  
+Global State Management (Context API)  
+↓  
+Mock Data Layer (LocalStorage Persistence)
 
-📊 Dashboard with placement stats:
+---
 
-Applied
+## 🔐 Authentication & Authorization
 
-Shortlisted
+- Role-based login (Student / Recruiter / Admin)  
+- Session persistence using localStorage  
+- Protected routes with automatic redirects  
+- Layout-level access control enforcement  
 
-Rejected
+---
 
-Selected
+## 👨‍🎓 Student Module
 
-👤 Profile management (academic details, skills, resume info)
+- Dashboard with application statistics  
+- Job browsing with search and eligibility filters  
+- Application status tracking:
+  - Applied  
+  - Shortlisted  
+  - Rejected  
+  - Selected  
+- Profile management (academic details, skills)  
+- Placement notifications  
 
-💼 Browse jobs with:
+---
 
-Eligibility filters
+## 🏢 Recruiter Module
 
-Real-time search
+- Company profile management  
+- Job posting lifecycle (Create / Edit / Delete)  
+- Applicant management panel  
+- Shortlist / Reject functionality  
+- Job-wise application analytics  
 
-📄 Application tracking with status updates
+---
 
-🔔 Notification system for placement updates
+## 🛠 Admin Module
 
-🏢 3. Recruiter Dashboard
+- Platform-wide statistics dashboard  
+- Student & recruiter management  
+- Department-wise placement insights  
+- Announcement publishing system  
+- Placement analytics using charts  
 
-📈 Recruiter analytics overview
+---
 
-📝 Post, edit, and delete job listings
+## 📊 Analytics & Visualization
 
-👥 Applicant management:
+Integrated charting system for:
 
-Shortlist
+- Placement distribution  
+- Department performance  
+- Application metrics  
+- Recruiter activity tracking  
 
-Reject
+---
 
-🏢 Company profile management
+## 🎨 UI/UX Features
 
-📊 Application statistics per job role
+- Responsive design (Mobile / Tablet / Desktop)  
+- Sidebar-based dashboard navigation  
+- Badge-driven status indicators  
+- Clean and professional interface  
+- Modular component-based structure  
 
-🛠 4. Admin Dashboard
+---
 
-📊 Complete system analytics
+## 🛠 Tech Stack
 
-👨‍🎓 Student management
+Framework: Next.js (App Router)  
+Frontend: React  
+Styling: Tailwind CSS  
+UI Components: shadcn/ui  
+State Management: Context API  
+Charts: Recharts  
+Authentication: Mock (localStorage)  
 
-🏢 Recruiter management
+---
 
-📈 Department-wise placement breakdown
+## 📂 Project Structure
 
-📢 Announcement management system
+```
+app/
+├── student/
+├── recruiter/
+├── admin/
+├── login/
+├── signup/
 
-📉 Placement distribution charts
+components/
+context/
+data/
+```
 
-📅 5. Additional Modules
+---
 
-🗓 Placement Calendar with event tracking
+## 🧪 Demo Access
 
-❓ FAQ section with searchable categories
+The system uses mock authentication.
 
-📖 About page (mission, vision, values)
-
-📞 Contact page with inquiry form
-
-🌐 Professional Landing Page
-
-🏗 Project Structure
-/app
-   /student
-   /recruiter
-   /admin
-/components
-/context
-   AuthContext.js
-/data
-   students.js
-   recruiters.js
-   jobs.js
-   applications.js
-/pages
-   login.js
-   signup.js
-   index.js
-
-🛠 Tech Stack
-
-Frontend Framework: Next.js / React
-
-Styling: Tailwind CSS
-
-UI Components: shadcn/ui
-
-Charts & Analytics: Recharts
-
-State Management: React Context API
-
-Authentication: Mock auth using localStorage
-
-Routing: Next.js App Router
-
-Data: Static Mock Data (JSON)
-
-🎨 UI & Design Highlights
-
-Fully responsive (Mobile / Tablet / Desktop)
-
-Sidebar navigation for dashboards
-
-Badge-based status indicators
-
-Clean professional UI
-
-Consistent theme and layout
-
-Modern dashboard design
-
-🧪 Demo Credentials
-
-You can log in using any email and password (Mock authentication system).
+You can log in with any email and password while selecting a role.
 
 Example:
 
-Student:
-email: student@test.com
-password: 123456
+Student:  
+email: student@test.com  
+password: 123456  
 
-Recruiter:
-email: recruiter@test.com
-password: 123456
+Recruiter:  
+email: recruiter@test.com  
+password: 123456  
 
-Admin:
-email: admin@test.com
-password: 123456
+Admin:  
+email: admin@test.com  
+password: 123456  
 
-🔒 Role-Based Access Control
-Role	Access Level
-Student	View & apply jobs, manage profile
-Recruiter	Post jobs, manage applicants
-Admin	Manage entire platform
-📊 System Flow
+---
 
-User logs in with selected role
+## 📦 Installation & Setup
 
-Redirected to role-specific dashboard
+Clone the repository:
 
-Role-based protected routes prevent unauthorized access
-
-All state persists via localStorage
-
-📌 Key Learning Outcomes
-
-Implemented role-based authentication
-
-Built multi-dashboard architecture
-
-Used Context API for global state management
-
-Designed modular and scalable folder structure
-
-Integrated charts and analytics
-
-Applied responsive UI design principles
-
-🔮 Future Improvements
-
-Backend integration (Node.js + Express / Firebase)
-
-Real database (MongoDB / PostgreSQL)
-
-Resume upload functionality
-
-Email notification system
-
-JWT authentication
-
-Role-based middleware security
-
-Interview scheduling module
-
-Admin approval workflows
-
-📦 Installation & Setup
-# Clone the repository
+```
 git clone https://github.com/your-username/campus-placement-system.git
+```
 
-# Navigate to project directory
+Navigate to project directory:
+
+```
 cd campus-placement-system
+```
 
-# Install dependencies
+Install dependencies:
+
+```
 npm install
+```
 
-# Start development server
+Run development server:
+
+```
 npm run dev
+```
 
+Open in browser:
 
-Project runs at:
-
+```
 http://localhost:3000
+```
+
+---
+
+## 🚀 Future Enhancements
+
+- Backend integration (Node.js + Express)  
+- Database integration (MongoDB / PostgreSQL)  
+- JWT authentication  
+- Resume upload functionality  
+- Email notification system  
+- Interview scheduling module  
+- CI/CD pipeline integration  
+- Docker deployment  
+
+---
+
+## 🎯 Learning Outcomes
+
+This project demonstrates:
+
+- Multi-role system design  
+- Protected routing  
+- Dashboard architecture  
+- State management using Context API  
+- Modular frontend structure  
+- Real-world SaaS-style UI development  
+
+---
+
+## 👨‍💻 Author
+
+Koushil Varma  
+B.Tech CSE (Honors)  
+Interested in DevOps, Automation & Scalable Systems
