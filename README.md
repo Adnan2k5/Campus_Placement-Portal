@@ -1,6 +1,6 @@
 
 
-                                                                                 🎓 Campus Placement Management System
+                                                  🎓 Campus Placement Management System
 
 A comprehensive role-based Campus Placement Management System built for managing student placements, recruiters, job postings, and administrative operations in a college environment.
 
