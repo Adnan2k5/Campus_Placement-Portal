@@ -209,8 +209,3 @@ This project demonstrates:
 
 ---
 
-## 👨‍💻 Author
-
-Koushil Varma  
-B.Tech CSE (Honors)  
-Interested in DevOps, Automation & Scalable Systems
